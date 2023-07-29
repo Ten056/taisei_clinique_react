@@ -1,5 +1,8 @@
-import { useEffect } from 'react'
-const Calendar = () => {
+import FullCalendar from "@fullcalendar/react";
+import dayGridPlugin from "@fullcalendar/daygrid";
+import { useEffect } from "react";
+
+const Calendar2 = () => {
   const cal = useEffect(() => {
     const head = document.getElementsByTagName('head')[0] as HTMLElement;
     const scriptUrl = document.createElement('script');
@@ -7,7 +10,7 @@ const Calendar = () => {
     scriptUrl.src = './resources/js/hemo_cal.js';
     head.appendChild(scriptUrl);
   }, []);
-  
+
   return (
     <>
       <div className="c-heading">
@@ -19,9 +22,9 @@ const Calendar = () => {
       <p className="u-txt-center c-heading3 u-text-red"><span className="calbox"></span>は休診日</p>
       <div className="c-heading" style={{marginBottom: '-20px'}}></div>
       {cal}
+      <FullCalendar plugins={[dayGridPlugin]} initialView="dayGridMonth" />
     </>
-    
   )
 }
 
-export default Calendar;
+export default Calendar2;

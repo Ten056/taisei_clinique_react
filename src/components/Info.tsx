@@ -1,5 +1,5 @@
 import OpenTime from "./OpenTime";
-import Calendar from "./Calendar";
+import Calendar2 from "./Calendar2";
 import DoctorTable from "./DoctorTable";
 const Info = () => {
   return (
@@ -8,7 +8,7 @@ const Info = () => {
         <div className="l-contents__inner">
           <section className="l-section" style={{marginBottom: '30px'}}>
             <OpenTime />
-            <Calendar />
+            <Calendar2 />
             <DoctorTable />
           </section>
         </div>
