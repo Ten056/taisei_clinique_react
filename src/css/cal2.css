@@ -3,25 +3,47 @@ th.fc-col-header-cell{
     padding: 10px 0;
     background-color:plum;
 }
+.fc{
+  height: 605px;
+    margin-bottom: 10px;
+}
 .fc .fc-scrollgrid {
     /* border-width: 0 0 0 0; 外側の枠線消す */
-    font-size: 20px;
+    font-size: 18px;
     font-weight: normal;
+    padding: 0;
+    box-sizing:content-box;
+    margin: 0;
+  }
+  .fc tr{
+
+    height: 30px !important;/* 枠の高さ指定 */
+    min-height: 0  !important;
+    max-height: 50px !important;
+    margin: 0;
+    padding: 0;
   }
   .fc-theme-standard td, .fc-theme-standard th {
-    height: 30px !important;/* 枠の高さ指定 */
+    height: 10px !important;/* 枠の高さ指定 */
+    min-height: 0  !important;
+    max-height: 0 !important;
+
   }
   /*　今日の背景 */
   .fc .fc-daygrid-day.fc-day-today {
     background: none;
   }
   .fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-frame {
-    background: rgba(49,159,141,0.1);
-    height: 30px !important;/* 枠の高さ指定 */
+    /* background: rgba(49,159,141,0.1); */
+    height: 20px !important;/* 枠の高さ指定 */
+    min-height: 50px  !important;
+    max-height: 50px !important;
   }
   /* 日付を枠の高さいっぱいに */
   .fc .fc-daygrid-day-frame {
-    height: 30px;
+    height: calc(100% - 10px);
+    min-height: 50px;
+    max-height: 50px;
   }
   /* 日付を枠の中心に */
   .fc .fc-daygrid-day-top {
@@ -31,8 +53,9 @@ th.fc-col-header-cell{
     text-align: center;
     min-height: 100%;
   }
+  
   .fc .fc-bg-event {
-    opacity: 1;
+    /* opacity: 1; */
   }
   /* イベントタイトル非表示 */
   .fc .fc-bg-event .fc-event-title {
@@ -44,4 +67,40 @@ th.fc-col-header-cell{
   }
   .fc .fc-cell-shaded, .fc .fc-day-disabled {
     background: none;
+  }
+  .fc .fc-daygrid-day-events{
+    height: 0;
+    min-height: 0;
+    max-height: 0;
+        display: none;
+  }
+
+  td.fc-day {
+    height: 50px  !important;
+    min-height: 50px  !important;
+    max-height: 50px  !important;
+    margin: 0 !important;
+
+  }
+  td.fc-day-mon{
+    height: 50px  !important;
+    min-height: 50px  !important;
+    max-height: 50px  !important;
+    margin: 0 !important;
+    
+  }
+  td.fc-day-future {
+    height: 50px  !important;
+    min-height: 50px  !important;
+    max-height: 50px  !important;
+    margin: 0 !important;
+    
+  }
+  td.fc-daygrid-day{
+    height: 50px  !important;
+    min-height: 50px  !important;
+    max-height: 50px  !important;
+    margin: 0 !important;
+    padding: 0;
+    
   }
