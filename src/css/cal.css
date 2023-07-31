@@ -1,0 +1,216 @@
+div.cal_wrapper {
+	padding:10px 0px;
+}
+div.schedule_wrapper {
+	padding: 10px 0px;
+	width: 50%;
+	border: solid 1px #CCC;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px #666;
+}
+div.schedule_wrapper h3 {
+	padding: 0px 10px;
+	font-weight: normal;
+	margin: 0px;
+	font-size: 12px;
+	color: #666;
+}
+div.schedule_wrapper div.schedule_list {
+	padding: 0px 10px;
+	margin: 0px;
+}
+div.schedule_wrapper div.schedule_list ol {
+	padding: 0px;
+	margin: 5px auto;
+	border-top: solid 1px #ccc;
+}
+div.schedule_wrapper div.schedule_list ol li {
+	padding: 5px 10px 0px 0px;
+	margin: 0px 0px 0px 30px;
+	font-size: 12px;
+	line-height: 1.5em;
+}
+div.schedule_wrapper div.schedule_list ol li:hover {
+	text-decoration: underline;
+}
+
+div.cal_wrapper table{
+	width: 100%;
+
+}
+div.cal_wrapper table.cal tr th p {
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	color: #535E83;
+	font-size: 24px;
+}
+div.cal_wrapper table.cal tr th div.cal_ui {
+	float: right;
+}
+div.cal_wrapper table.cal tr th div.cal_ui input {
+    border: solid 0px #CCC;
+	background-color: #CBE9F4;
+	font-size: 20px;
+	margin: 0px 1px;
+	padding: 5px 10px;
+	border-radius: 10px;
+    margin-bottom: 5px;
+}
+div.cal_wrapper table.cal tr td {
+	border: solid 1px #CECECE;
+}
+div.cal_wrapper table.cal tr td {
+	font-size: 20px;
+	font-weight:bolder;
+	text-align: center;
+	padding: 0px
+}
+div.cal_wrapper table.cal tr.headline td {
+	padding: 10px 0px;
+	color: #000;
+	font-weight: bold !important;
+	margin: 0px 0px;
+}
+div.cal_wrapper table.cal tr.headline:nth-child(6){
+	color: #96001c;
+	background-color: #ffcfd8;
+}
+div.cal_wrapper table.cal tr.headline {
+	font-weight: bold !important;
+	background-color: rgba(227,180,213,0.5);
+}
+.bold{
+	font-weight: 800 !important;
+}
+div.cal_wrapper table.cal tr td div {
+	position: relative;
+	padding: 10px 0px;
+	font-size: 16px;
+	text-align: center;
+	background-color: #FFF;
+	border-radius: 0px;
+}
+div.cal_wrapper table.cal tr td div span {
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	width: 180px;
+	border: solid 1px #EEE;
+	background-color: #FFF;
+	text-align: left;
+	padding: 5px;
+	z-index: 10;
+	color: #000;
+	font-weight: normal;
+	line-height: 1.5em;
+	box-shadow: 1px 1px 3px #666;
+}
+
+/* 以下、クラス指定するときのアレ */
+
+div.cal_wrapper table.cal tr td div.Sat{
+	color: #214BC3;
+
+}
+div.cal_wrapper table.cal tr td div.Sun {
+	color: #F00;
+}
+div.cal_wrapper table.cal tr td div.Today {
+	font-weight: bolder;
+}
+div.cal_wrapper table.cal tr td div.Deli {
+	background-color: #fff;
+}
+div.cal_wrapper table.cal tr td div.Holyday {
+	font-weight: bolder;
+	color: #F00;
+	background-color: #FFDFDF;
+}
+div.cal_wrapper table.cal tr td div.Fri {
+	font-weight: bolder;
+	background-color: #FFF7EE;
+	color: #E77E0D;
+
+}
+
+div.cal_wrapper table.cal tr td div.backward {
+	color: #CCC;
+	font-weight: normal;
+	background-color: #FFF;
+	border-radius: 3px;
+}
+div.cal_wrapper table.cal tr td div.pointer {
+	cursor: pointer;
+}
+div.cal_wrapper table.cal tr td div.pointer:hover {
+	background-color: #EEE;
+}
+
+@media screen and (max-width: 768px) {
+  /* ---------------------------
+ * Mobile
+ * --------------------------- */
+div.cal_wrapper table{
+	width: 100%;
+	margin-top: 20px;
+}
+div.cal_wrapper table.cal tr th p {
+	float: left;
+	padding: 0px;
+	margin:0 0 0px;
+	color: #535E83;
+	font-size: 18px;
+}
+div.cal_wrapper table.cal tr th div.cal_ui {
+	float: right;
+}
+div.cal_wrapper table.cal tr th div.cal_ui input {
+
+	font-size: 14px;
+}
+div.cal_wrapper table.cal tr td {
+	border: solid 1px #DBDBDB;
+}
+div.cal_wrapper table.cal tr td {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	padding: 0px
+}
+div.cal_wrapper table.cal tr.headline td {
+	padding: 10px 0px;
+	color: #000;
+	margin: 0px 0px;
+}
+div.cal_wrapper table.cal tr.headline {
+	background-color: rgba(227,180,213,0.6);
+}
+div.cal_wrapper table.cal tr td div {
+	position: relative;
+	padding: 10px 0px;
+	font-size: 14px;
+	text-align: center;
+	background-color: #FFF;
+	border-radius: 0px;
+}
+div.cal_wrapper table.cal tr td div span {
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	width: 180px;
+	border: solid 1px #EEE;
+	background-color: #FFF;
+	text-align: left;
+	padding: 5px;
+	z-index: 10;
+	color: #000;
+	font-weight: normal;
+	line-height: 1.5em;
+	box-shadow: 1px 1px 3px #666;
+}
+
+	
+}
