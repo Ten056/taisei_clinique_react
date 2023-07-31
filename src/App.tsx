@@ -7,6 +7,13 @@ import { useState } from 'react';
 import Sns from './components/Sns';
 import Footer from './components/Footer';
 import Menu from './components/Menu';
+import './css/bunin.css';
+import './css/cal.css';
+import './css/color.css';
+import './css/hemo_3.css';
+import './css/hemo.css';
+import './css/style.css';
+import './css/swiper.css';
 
 function App() {
   return (
