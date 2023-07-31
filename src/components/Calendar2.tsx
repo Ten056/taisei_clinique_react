@@ -4,6 +4,7 @@ import jaLocale from '@fullcalendar/core/locales/ja';
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import '@splidejs/splide/css'; // デフォルトのテーマを読み込んでいます（コアスタイルのみ読み込む設定も可能）
 import { useEffect } from "react";
+import "./src/css/cal2.css";
 
 const Calendar2 = () => {
   const cal = useEffect(() => {
