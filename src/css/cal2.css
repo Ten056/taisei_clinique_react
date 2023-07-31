@@ -4,8 +4,9 @@ th.fc-col-header-cell{
     background-color:plum;
 }
 .fc{
-  height: 605px;
+  height: 597px;
     margin-bottom: 10px;
+    overflow: visible;
 }
 .fc .fc-scrollgrid {
     /* border-width: 0 0 0 0; 外側の枠線消す */
