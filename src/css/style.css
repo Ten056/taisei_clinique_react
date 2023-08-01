@@ -7108,7 +7108,7 @@ margin-bottom: 10px;
     font-size: 24px;
     line-height: 1.66667;
   }
-  .c-buttonGroup {
+  /* .c-buttonGroup {
     margin: 40px 0 60px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7116,7 +7116,7 @@ margin-bottom: 10px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-  }
+  } */
   .c-buttonGroup__item {
     width: 360px;
   }
