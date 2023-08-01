@@ -1,0 +1,26 @@
+.menuButton#menuButton {
+  position: absolute;
+  margin: 0px;
+  z-index: 1000000;
+  top: 6px;
+  right: 10px;
+  background-color: #535e83;
+}
+
+.menuButton#menuButton:hover {
+  background-color: steelblue;
+};
+
+.menuButton#menuButton:active {
+  background-color: aqua;
+}
+
+.menuTitle#menuTitle,#menuTitle2{
+  background-color: #535e83;
+  color: white;
+}
+
+.acItem {
+  text-align:center;
+  padding:2px 0;
+}

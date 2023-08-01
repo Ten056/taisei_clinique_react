@@ -1,5 +1,16 @@
+import { useEffect } from "react";
+
 const Menu = () => {
+  const appJs = useEffect(() => {
+    const head = document.getElementsByTagName('head')[0] as HTMLElement;
+    const scriptUrl = document.createElement('script');
+    scriptUrl.type = 'text/javascript';
+    scriptUrl.src = './resources/js/app.js';
+    head.appendChild(scriptUrl);
+  }, []);
   return (
+  
+    <>
     <nav className="p-menu" role="navigation">
       <h1 className="p-menu__logo">
         <a href="https://hachicli.or.jp/shinjuku/">
@@ -68,6 +79,8 @@ const Menu = () => {
         <div className="p-menu__navBg"></div>
       </div>
     </nav>
+    {appJs}
+    </>
   )
 }
 
