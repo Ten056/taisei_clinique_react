@@ -1,10 +1,11 @@
+import React, { useEffect } from 'react';
+import { useRef } from 'react';
 import FullCalendar from "@fullcalendar/react";
 import {DayCellContentArg} from "@fullcalendar/core";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import jaLocale from '@fullcalendar/core/locales/ja';
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import '@splidejs/splide/css'; // デフォルトのテーマを読み込んでいます（コアスタイルのみ読み込む設定も可能）
-import { useEffect } from "react";
 import "../../src/css/cal2.css";
 
 const Calendar2 = () => {
@@ -16,6 +17,18 @@ const Calendar2 = () => {
     head.appendChild(scriptUrl);
   }, []);
   
+
+  const cal2 = useEffect(() => {
+    const head = document.getElementsByTagName('head')[0] as HTMLElement;
+    const scriptUrl = document.createElement('script');
+    scriptUrl.type = 'text/javascript';
+    scriptUrl.src = './resources/js/hemo_cal.js';
+    head.appendChild(scriptUrl);
+  }, []);
+
+
+
+
   return (
     <>
       <div className="c-heading">
@@ -30,8 +43,8 @@ const Calendar2 = () => {
       <FullCalendar plugins={[dayGridPlugin]} initialView="dayGridMonth" 
       locales={[jaLocale]} 
       locale='ja'
-      dayCellContent={(event: DayCellContentArg) =>
-        (event.dayNumberText = event.dayNumberText.replace("日", ""))}
+      fixedWeekCount={false}
+      contentHeight={'auto'}
       events={[
         { start: '2023-08-01', display: 'background' ,backgroundColor:'#ffbbbb' },
         { start: '2023-08-06', display: 'background' ,backgroundColor:'#ffbbbb' },
@@ -53,9 +66,10 @@ const Calendar2 = () => {
         { start: '2023-09-19', display: 'background' ,backgroundColor:'#ffbbbb' },
         { start: '2023-09-23', display: 'background' ,backgroundColor:'#ffbbbb' },
         { start: '2023-09-24', display: 'background' ,backgroundColor:'#ffbbbb' },
-        { start: '2023-09-26', display: 'background' ,backgroundColor:'#ffbbbb' }
-        
+        { start: '2023-09-26', display: 'background' ,backgroundColor:'#ffbbbb' },
       ]}
+      dayCellContent={(event: DayCellContentArg) => (event.dayNumberText = event.dayNumberText.replace("日", ""))}
+  
       />
 
       <Splide

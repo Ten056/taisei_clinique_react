@@ -1,10 +1,10 @@
+
 th.fc-col-header-cell{
     font-size: 120%;
     padding: 10px 0;
     background-color:plum;
 }
 .fc{
-  height: 597px;
     margin-bottom: 10px;
     overflow: visible;
 }
@@ -16,35 +16,19 @@ th.fc-col-header-cell{
     box-sizing:content-box;
     margin: 0;
   }
-  .fc tr{
-
-    height: 30px !important;/* 枠の高さ指定 */
-    min-height: 0  !important;
-    max-height: 50px !important;
-    margin: 0;
-    padding: 0;
-  }
   .fc-theme-standard td, .fc-theme-standard th {
-    height: 10px !important;/* 枠の高さ指定 */
-    min-height: 0  !important;
-    max-height: 0 !important;
-
+    height: 100%;/* 枠の高さ指定 */
   }
   /*　今日の背景 */
   .fc .fc-daygrid-day.fc-day-today {
     background: none;
   }
   .fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-frame {
-    /* background: rgba(49,159,141,0.1); */
-    height: 20px !important;/* 枠の高さ指定 */
-    min-height: 50px  !important;
-    max-height: 50px !important;
+    height: 100%;
   }
   /* 日付を枠の高さいっぱいに */
   .fc .fc-daygrid-day-frame {
-    height: calc(100% - 10px);
-    min-height: 50px;
-    max-height: 50px;
+    height: 100%;
   }
   /* 日付を枠の中心に */
   .fc .fc-daygrid-day-top {
@@ -77,31 +61,10 @@ th.fc-col-header-cell{
   }
 
   td.fc-day {
-    height: 50px  !important;
-    min-height: 50px  !important;
-    max-height: 50px  !important;
+    height: 40px  !important; /*ここでセルの高さ変えられる*/
+    /* min-height: 50px  !important;
+    max-height: 50px  !important; */
     margin: 0 !important;
 
   }
-  td.fc-day-mon{
-    height: 50px  !important;
-    min-height: 50px  !important;
-    max-height: 50px  !important;
-    margin: 0 !important;
-    
-  }
-  td.fc-day-future {
-    height: 50px  !important;
-    min-height: 50px  !important;
-    max-height: 50px  !important;
-    margin: 0 !important;
-    
-  }
-  td.fc-daygrid-day{
-    height: 50px  !important;
-    min-height: 50px  !important;
-    max-height: 50px  !important;
-    margin: 0 !important;
-    padding: 0;
-    
-  }
+  
