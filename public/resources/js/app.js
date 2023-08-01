@@ -5972,12 +5972,13 @@
             0.5 * r +
             n;
     },
-  }),
+  })
   /*! jQuery.tinyscroller (https://github.com/Takazudo/jQuery.tinyscroller)
    * lastupdate: 2013-03-29
    * version: 0.5.1
    * author: 'Takazudo' Takeshi Takatsudo <takazudo@gmail.com>
-   * License: MIT */ function () {
+   * License: MIT */,
+  function () {
     var e = [].slice,
       t = function (e, t) {
         return function () {
@@ -6317,13 +6318,14 @@
         (n.Tinyscroller = c.Scroller)
       );
     })(jQuery, window, document);
-  }.call(this),
+  }.call(this)
   /*! jquery.toggler.js (git://github.com/oosugi20/jquery.toggler.js.git)
    * lastupdate: 2014-09-01
    * version: 0.1.4
    * author: Makoto OOSUGI <oosugi20@gmail.com>
    * License: MIT
-   */ !(function (e, t) {
+   */,
+  !(function (e, t) {
     "use strict";
     var n,
       r = e(t),

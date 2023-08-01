@@ -3,7 +3,7 @@ import ContentsList from './components/ContentsList';
 import Info from './components/Info';
 import Map from './components/Map';
 import Contact from './components/Contact';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import Sns from './components/Sns';
 import Footer from './components/Footer';
 import Menu from './components/Menu';
@@ -14,32 +14,29 @@ import './css/hemo_3.css';
 import './css/hemo.css';
 import './css/style.css';
 import './css/swiper.css';
+import './css/menu.css';
 import Header from './components/Header';
+import Menu2 from './components/Menu2';
 
 function App() {
-  const appJs = useEffect(() => {
-    const head = document.getElementsByTagName('head')[0] as HTMLElement;
-    const scriptUrl = document.createElement('script');
-    scriptUrl.type = 'text/javascript';
-    scriptUrl.src = './resources/js/app.js';
-    head.appendChild(scriptUrl);
-  }, []);
   return (
     <>
-      <Header />
-      <Menu />
-      <main className='l-main'>
-        <CatchPhrase />
-        <ContentsList />
-        <Info />
-        <Map />
-        <Contact />
-        <Sns />
-      </main>
-      <footer className="l-footer">
-        <Footer />
-      </footer>
-      {appJs}
+      <div className='l-page'>
+        <Header />
+        {/* <Menu /> */}
+        <Menu2 />
+        <main className='l-main'>
+          <CatchPhrase />
+          <ContentsList />
+          <Info />
+          <Map />
+          <Contact />
+          <Sns />
+        </main>
+        <footer className="l-footer">
+          <Footer />
+        </footer>
+      </div>
     </>
   )
 }
